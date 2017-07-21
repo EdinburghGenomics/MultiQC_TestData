@@ -16,7 +16,8 @@ sys.path.insert(0,'../MultiQC')
 class T(unittest.TestCase):
 
     def setUp(self):
-        pass
+        #This controls the error display and is generally a good idea...
+        self.maxDiff = None
 
     def test_something(self):
         self.assertTrue(True)
